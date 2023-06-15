@@ -1,0 +1,184 @@
+/* font-family: 'Kelly Slab', cursive; */
+
+@media screen and (max-width: 3000px) {
+    /* .main-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  } */
+}
+
+header {
+    font-family: 'Rock Salt', cursive;
+}
+
+body {
+    background-color: #F5F0BB;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mb-3 {
+    display: flex;
+    justify-content: center;
+}
+
+.target {
+    background-color: #73A9AD !important;
+    font-style: white !important;
+}
+
+#facts {
+    justify-content: center;
+    display: flex;
+}
+
+.btn-primary {
+    background-color: #73A9AD !important;
+}
+
+.card-body {
+    background-color: #C4DFAA;
+}
+
+#recipes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* !important acts as a z-index to override bootstrap css*/
+#searchAllRecBtn {
+    background-color: #73A9AD !important;
+}
+
+.myNav {
+    background-color: #F5F0BB !important;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: "250";
+    height: "200";
+
+}
+
+.align-top {
+    justify-content: center !important;
+}
+
+.facts {
+    display: flex;
+    align-items: center;
+    background-color: #C4DFAA;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 15px;
+    margin: 15px;
+    width: 275px;
+    height: 100px;
+    border-color: black;
+    border-style: solid;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.nextBtn {
+
+    display: none;
+    background-color: #73A9AD !important;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.backBtn {
+    display: none;
+    background-color: #73A9AD !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#ingred {
+    margin-bottom: 5%;
+}
+#recPerIngred {
+    margin-top:5%;
+    margin-bottom:5%
+}
+
+#recipeSearchCard{
+    display: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top:5%;
+    margin-bottom:5%;
+}
+
+#recPerIngred {
+    margin-top: 5%;
+    margin-bottom: 5%
+}
+
+#recipeSearchCard {
+    display: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.navbar-brand {
+    justify-content: "center";
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: "250";
+    height: "200";
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#favorites {
+    display: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#buttonHolder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#addBtn {
+    width: 20%;
+    display: none;
+}
+
+#btnPic {
+    width: 100%;
+    height: auto;
+}
+
+.timeBox {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.favRec {
+    display: none;
+}
+
+.favPage {
+    display: none;
+}
+.love:hover{
+    color:#73A9AD;
+    text-decoration: underline;
+}

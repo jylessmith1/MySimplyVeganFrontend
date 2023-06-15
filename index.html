@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimplyVegan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+   
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light myNav">
+        <a class="navbar-brand" href="#">
+            <img src="/content/simplyvegan-low-resolution-logo-color-on-transparent-background (2).png" width="250"
+                height="100" justify-content="center" class="d-inline-block align-top" alt="">
+            <img src="" alt="">
+        </a>
+    </nav>
+       
+
+
+    <main class="main-div">
+        <div id="facts">
+
+            <div class="card factCard text-center mb-3" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title factsTitle"></h5>
+                    <p class="card-text factsTime"></p>
+                    <a href="#" class="btn btn-primary">Vegan Fact</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-group mb-3">
+            <button type="button" class="btn btn-outline-dark dropdown-toggle dropdown-toggle-split target" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="visually-hidden">Medical Checklist</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+        </div>
+
+        <!-- <div class="facts">
+            <button type="click" id="factsBtn">Random Facts</button>
+            <div id='textBox'></div>
+        </div> -->
+        
+        <!--This is for the random recipe-->
+        <div id="recipes">
+            <div class="card recipeCard" style="width: 18rem;" >
+                <div class="card-body">
+                    <h5 class="card-title recTitle">Randome Recipe Name</h5>
+                    <p class="card-text recTime">Time</p>
+                    <p class="card-text recIngred">Ingredients</p>
+                    <p class="card-text recDirec">Directions</p>
+                </div>
+            </div>
+
+            <!--Div to search recipes based on ingred-->
+            <div id="recPerIngred">
+                <div class="card searchCard" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title searchInstr">Search recipes by ingredient</h5>
+                            <label for="ingred">Ingredient:</label>
+                            <input type="text" id="ingred" name="ingred"></input>
+                            <button id="searchAllRecBtn">Search All Recipes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Div for recipe results from ingredient search-->
+            <div id = "recipeSearchCard">
+                <div class="card recipeSearchCard" style="width: 18rem;">
+                    <div class="card-body recSearchCardBody">
+                        <h5 class="card-title recSearchTitle"></h5>
+                            <div class="timeBox">
+                                <p class="card-text recSearchTime"></p>
+                                <button id="addBtn"><img src = "./images/emptyHeart.png" id="btnPic"></button>
+                            </div>
+                        
+                        <p class="card-text recSearchTime"></p>
+                        <p class="card-text recSearchIngred"></p>
+                        <p class="card-text recSearchDirec"></p>
+                        <div id="buttonHolder">
+                            <button class ="backBtn">Back</button>
+                            <button class ="nextBtn">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id = "favorites">
+                <div class="card favorites" style="width: 18rem;">
+                    <div class="card-body favCardBody">
+                        <div class = "favPage">
+                            <h5 class="card-title favTitleList">My Favorites</h5>
+
+                            <!--favorites will be created here in DOM-->
+                        </div>
+                        <div class = "favRec">
+                            <h5 class="card-title favTitle">Name</h5>
+                            <p class="card-text favTime">Time</p>
+                            <p class="card-text favIngred">Ingredients</p>
+                            <p class="card-text favDirec">Directions</p>
+                            <button class="favBackToFavBtn">Back to Favorites</button>
+
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+
+    <!-- <footer>
+        <span class="center">&copy;SimplyVegan</span>
+    </footer> -->
+
+    <script src="javascript/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
